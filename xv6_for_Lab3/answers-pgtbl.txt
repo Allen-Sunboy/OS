@@ -1,0 +1,3 @@
+可以加速fork()，在usyscall结构体中添加一个parent，供child在使用的时候不需要切到内核态
+page 0是data和text，page 2是stack，在用户态时，不能读写page 1，page 3到最后一页是heap, trapframe, trampoline
+
